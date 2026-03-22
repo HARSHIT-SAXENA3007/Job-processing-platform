@@ -4,17 +4,6 @@ pipeline {
 
     stages {
 
-        stage('Clone repo') {
-
-            steps {
-
-                git 'https://github.com/HARSHIT-SAXENA3007/Job-processing-platform.git'
-
-            }
-
-        }
-
-
         stage('Install dependencies') {
 
             steps {
