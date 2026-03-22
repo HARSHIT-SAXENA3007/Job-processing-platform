@@ -5,6 +5,10 @@ pipeline {
             image 'node:18'
         }
     }
+    
+    environment {
+        MONGO_URI = credentials('mongo-uri')
+    }
 
     stages {
 
