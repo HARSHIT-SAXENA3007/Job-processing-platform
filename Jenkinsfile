@@ -8,7 +8,7 @@ pipeline {
 
             steps {
 
-                git 'https://github.com/YOUR_USERNAME/ai-job-processing-platform.git'
+                git 'https://github.com/HARSHIT-SAXENA3007/Job-processing-platform.git'
 
             }
 
