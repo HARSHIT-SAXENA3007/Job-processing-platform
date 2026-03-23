@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: job-platform
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: job-platform
+
+  template:
+    metadata:
+      labels:
+        app: job-platform
+
+    spec:
+      containers:
+        - name: job-platform
+
+          image: butterbeer3007/job-platform:latest
+
+          ports:
+            - containerPort: 3000
+
+          env:
+            - name: MONGO_URI
+              value: "mongodb://Harshit:harshit_mongo30db@ac-of0unpa-shard-00-00.mt7t8fj.mongodb.net:27017,ac-of0unpa-shard-00-01.mt7t8fj.mongodb.net:27017,ac-of0unpa-shard-00-02.mt7t8fj.mongodb.net:27017/jobDB?ssl=true&replicaSet=atlas-t6m3e5-shard-0&authSource=admin&retryWrites=true&w=majority"
