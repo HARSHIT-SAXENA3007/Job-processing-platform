@@ -16,7 +16,8 @@
   "dependencies": {
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
-    "mongoose": "^9.3.1"
+    "mongoose": "^9.3.1",
+    "newrelic": "^13.17.0"
   },
   "devDependencies": {
     "jest": "^30.3.0",

@@ -30,3 +30,12 @@ spec:
               value: "mongodb://Harshit:harshit_mongo30db@ac-of0unpa-shard-00-00.mt7t8fj.mongodb.net:27017,ac-of0unpa-shard-00-01.mt7t8fj.mongodb.net:27017,ac-of0unpa-shard-00-02.mt7t8fj.mongodb.net:27017/jobDB?ssl=true&replicaSet=atlas-t6m3e5-shard-0&authSource=admin&retryWrites=true&w=majority"
             - name: PORT
               value: "3000"
+
+            - name: NEW_RELIC_LICENSE_KEY
+              value: "REPLACE_WITH_YOUR_KEY"
+
+            - name: NEW_RELIC_APP_NAME
+              value: "job-platform"
+
+            - name: NEW_RELIC_NO_CONFIG_FILE
+              value: "true"
