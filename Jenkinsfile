@@ -34,7 +34,7 @@ pipeline {
 
         stage('Build docker image') {
             steps {
-                sh 'docker build -t job-platform .'
+                sh 'docker build -t butterbeer3007/job-platform:latest .'
             }
         }
 
