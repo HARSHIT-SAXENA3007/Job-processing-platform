@@ -5,7 +5,7 @@ metadata:
   name: job-platform-service
 
 spec:
-  type: ClusterIP
+  type: LoadBalancer
 
   selector:
     app: job-platform
