@@ -344,14 +344,6 @@ New Relic integration provides:
 
 Helps identify bottlenecks in production.
 
-# Scaling Workers
-
-- Increase processing capacity:
-
-- kubectl scale deployment job-worker --replicas=3
-
-- Multiple workers process jobs concurrently.
-
 # Error Handling
 
 Handles:
