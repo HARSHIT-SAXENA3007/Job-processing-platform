@@ -1,8 +1,8 @@
 # Job Processing Platform — Backend
 
-A scalable distributed backend system for asynchronous job execution built using **Node.js, Express, MongoDB, Redis, Docker, Kubernetes, Jenkins, and New Relic**.
+A scalable distributed backend system for asynchronous job execution built using **Node.js, Express, MongoDB, Docker, Kubernetes, Jenkins, and New Relic**.
 
-The platform allows authenticated users to submit jobs which are processed asynchronously by worker services. It demonstrates real-world backend architecture patterns including **queue-based processing, microservice-style separation, CI/CD automation, containerization, and cloud deployment**.
+The platform allows authenticated users to submit jobs which are processed asynchronously by worker services. It demonstrates real-world backend architecture patterns including **microservice-style separation, CI/CD automation, containerization, and cloud deployment**.
 
 ---
 
@@ -44,7 +44,6 @@ Users can:
 
 ## Asynchronous Job Processing
 
-- Job queue powered by Redis
 - Background worker service
 - Non-blocking job execution
 - Real-time job status updates
@@ -104,8 +103,6 @@ Express API Server
 ↓
 MongoDB Database
 ↓
-Redis Queue
-↓
 Worker Service
 ↓
 Job Result Stored
@@ -128,11 +125,6 @@ Client fetches result
 
 - MongoDB
 - Mongoose ODM
-
-## Queue System
-
-- Redis
-- Bull queue
 
 ## Authentication
 
