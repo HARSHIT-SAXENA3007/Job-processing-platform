@@ -2,15 +2,25 @@ const express = require("express");
 
 const router = express.Router();
 
+const authMiddleware = require("../middleware/authMiddleware");
+
 const {
   createJob,
-  getJobById
+  getJobById,
+  getJobs
 } = require("../controllers/jobController");
 
 
-router.post("/jobs", createJob);
+// create job
+router.post("/", authMiddleware, createJob);
 
-router.get("/jobs/:id", getJobById);
+
+// get ALL jobs of logged-in user
+router.get("/", authMiddleware, getJobs);
+
+
+// get single job
+router.get("/:id", authMiddleware, getJobById);
 
 
 module.exports = router;

@@ -39,3 +39,6 @@ spec:
 
             - name: NEW_RELIC_NO_CONFIG_FILE
               value: "true"
+
+            - name: JWT_SECRET
+              value: "jobplatformsecretkey"
